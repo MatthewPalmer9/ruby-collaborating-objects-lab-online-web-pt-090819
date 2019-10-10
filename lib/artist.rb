@@ -30,7 +30,7 @@ class Artist
 
   def self.create(name)
     #------------Artist.new(name)
-    s#elf.new(name).tap(){|artist| artist.save}
+    #self.new(name).tap(){|artist| artist.save}
     new_artist = self.new(name)
     new_artist.save
     new_artist
