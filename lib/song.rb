@@ -8,7 +8,7 @@ class Song
     @@all << self
   end
 
-  def self.all 
+  def self.all
     @@all
   end
 
@@ -17,5 +17,5 @@ class Song
     new_song = self.new(song)
     new_song.artist = artist_obj
     new_song 
-  end 
+  end
 end
