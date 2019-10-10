@@ -1,10 +1,10 @@
-class Artist 
-  attr_accesor :name 
+class Artist
+  attr_accesor :name
 
   @@all = []
 
   def initialize(name)
     @name = name
     @@all << self
-  end 
-end 
+  end
+end
