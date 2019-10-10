@@ -22,7 +22,7 @@ class Artist
 
   def save
     @@all << self
-  end 
+  end
 
   def self.find(name)
     self.all.find(){|name| name == artist.name}
@@ -32,10 +32,10 @@ class Artist
     #------------Artist.new(name)
     new_artist = self.new(name)
     new_artist.save
-    new_artist  
+    new_artist
   end
 
   def self.find_or_create_by_name(name)
-    self.find(name) ? self.find(name) : self.create(name) 
-  end 
+    self.find(name) ? self.find(name) : self.create(name)
+  end
 end
