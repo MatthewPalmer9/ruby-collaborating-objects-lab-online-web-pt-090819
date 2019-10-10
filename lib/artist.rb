@@ -9,10 +9,10 @@ class Artist
   end
 
   def self.all
-    @@all 
+    @@all
   end
 
-  def songs 
+  def songs
     Song.all.select(){|song| song.artist == self}
   end
 end
